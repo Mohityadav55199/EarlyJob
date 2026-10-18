@@ -1,6 +1,6 @@
 'use strict';
 const { openDb, createRepo, seed } = require('../db');
-const { createServer } = require('../server');
+const { createServer } = require('../lib/server');
 
 // Serverless: state lives in memory for the life of the function instance.
 const repo = createRepo(openDb());

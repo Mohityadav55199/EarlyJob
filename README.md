@@ -28,4 +28,4 @@ Environment variables: `PORT`, `DB_FILE` (SQLite file path; default is in-memory
 | GET | `/api/meta` | stages and roles |
 
 ## Deploy
-A `Dockerfile` is included; any Node host works (Render, Railway, Fly.io). Start command: `node server.js`. Without `DB_FILE` on a persistent disk, data resets on restart and demo data is re-seeded.
+A `Dockerfile` is included; any Node host works (Render, Railway, Fly.io). Start command: `node lib/server.js`. Without `DB_FILE` on a persistent disk, data resets on restart and demo data is re-seeded.

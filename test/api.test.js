@@ -2,7 +2,7 @@
 const test = require('node:test');
 const assert = require('node:assert');
 const { openDb, createRepo } = require('../db');
-const { createServer } = require('../server');
+const { createServer } = require('../lib/server');
 
 let server, base;
 test.before(async () => {
