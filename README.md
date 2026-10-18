@@ -1,5 +1,7 @@
 # Mini ATS
 
+**Live demo:** https://earlyjob-omega.vercel.app/
+
 A small Applicant Tracking System: manage candidates, move them through hiring stages, search/filter, and view dashboard metrics.
 
 ## Features
@@ -29,3 +31,6 @@ Environment variables: `PORT`, `DB_FILE` (SQLite file path; default is in-memory
 
 ## Deploy
 A `Dockerfile` is included; any Node host works (Render, Railway, Fly.io). Start command: `node lib/server.js`. Without `DB_FILE` on a persistent disk, data resets on restart and demo data is re-seeded.
+
+### Note on the live demo
+The Vercel deployment runs the API as a serverless function with an in-memory SQLite database, so data is not persistent: it resets on cold starts and the demo candidates are re-seeded. For persistent data run locally with `DB_FILE=ats.db npm start`, or deploy the Docker image to a host with a disk.
