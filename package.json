@@ -1,0 +1,13 @@
+﻿{
+  "name": "mini-ats",
+  "version": "1.0.0",
+  "description": "Mini Applicant Tracking System: candidates, hiring stages, search and dashboard metrics",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=22.5" },
+  "license": "MIT"
+}
+

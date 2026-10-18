@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini ATS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Mini ATS</h1>
+    <nav id="tabs">
+      <button data-view="dashboard" class="active">Dashboard</button>
+      <button data-view="board">Board</button>
+      <button data-view="list">Candidates</button>
+    </nav>
+    <button id="add-btn" class="primary">+ Add candidate</button>
+  </header>
+
+  <section class="toolbar" id="toolbar" hidden>
+    <input id="q" type="search" placeholder="Search name, email, role, skills, notes…" aria-label="Search">
+    <select id="f-role" aria-label="Filter by role"><option value="">All roles</option></select>
+    <select id="f-stage" aria-label="Filter by stage"><option value="">All stages</option></select>
+  </section>
+
+  <main>
+    <section id="view-dashboard"></section>
+    <section id="view-board" hidden></section>
+    <section id="view-list" hidden></section>
+  </main>
+
+  <dialog id="modal"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
